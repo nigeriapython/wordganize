@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Wordganize"
+    content="Wordganize is a cutting-edge word organization platform that uses NLP, ML and AI to provide accurate word meanings, synonyms, antonyms, and related words. Perfect for students, writers and word enthusiasts. Start exploring the world of words now." />
+  <meta name="Wordganize"
+    content="Introducing Wordganize, the ultimate solution for organizing and understanding words. With our cutting-edge technology and user-friendly interface, you can quickly and easily find the meaning of words, generate synonyms and antonyms, and even discover new and related words. Our platform uses natural language processing, machine learning, and artificial intelligence to provide you with the most accurate and up-to-date information on words. Whether you're a student, writer, or just someone who loves words, Wordganize is the perfect tool for you. Start exploring the world of words today with Wordganize!" />
+  <title id="web_name"></title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+  <!-- <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- jQuery google CDN  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- Bootstarp icon  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+
+<body>
+  <main>
+    <!-- Navbar  -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-md text_wordganize fixed-top bg-light">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href="#!"><img src="images/wogo-dark.png" alt="wordganize" srcset="" width="150"
+                class="img-fluid logo_img lglogo_view" /></a>
+
+            <a href="#!"><img src="images/favicon.png" alt="wordganize" srcset="" width="50"
+                class="img-fluid logo_img smlogo_view" /></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fw-bold about_link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold how_works" href="#">How it Works</a>
+              </li>
+            </ul>
+
+            <!-- LIGHT and DARK Switch  -->
+            <div>
+              <a href="#"><i class="bi bi-moon text-black" id="switch_mode_icon_light"></i></a>
+              <a href="#"><i class="bi bi-moon-fill text_wordganize" id="switch_mode_icon_dark"></i></a>
+            </div>
+
+            <!-- Sign Up Button  -->
+            <button class="btn btn-sm btn-outline-success border-2 m-3 text-black fw-bold">Sign Up</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- Navbar End  -->
+
+
+    <!-- SEO KEYWORDS  -->
+    <h1 class="visually-hidden web_name_class"></h1>
+    <p class="visually-hidden">
+      Introducing Wordganize, the ultimate solution for organizing and
+      understanding words. With our cutting-edge technology and user-friendly
+      interface, you can quickly and easily find the meaning of words,
+      generate synonyms and antonyms, and even discover new and related words.
+      Our platform uses natural language processing, machine learning, and
+      artificial intelligence to provide you with the most accurate and
+      up-to-date information on words. Whether you're a student, writer, or
+      just someone who loves words, Wordganize is the perfect tool for you.
+      Start exploring the world of words today with Wordganize!
+    </p>
+    <p class="visually-hidden web_des">
+      Wordganize is a cutting-edge word organization platform that uses NLP,
+      ML and AI to provide accurate word meanings, synonyms, antonyms, and
+      related words. Perfect for students, writers and word enthusiasts. Start
+      exploring the world of words now.
+    </p>
+    <!-- SEO KEYWORDS END -->
+
+
+    <!-- Starter  -->
+    <div class="bg-dark text-secondary px-4 py-5 text-center" id="starter">
+      <div class="py-5">
+        <!-- <h1 class="display-5 fw-bold text-white">Wordganize</h1> -->
+        <div class="wogo col-lg-5 mx-auto">
+          <a href="#"><img src="images/wogo.png" alt="wordganize" srcset="" class="img-fluid logo_img" /></a>
+          <hr class="text-light" />
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4 text-white" id="demo_wordganize">
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold get-started">
+              Get Started
+            </a>
+            <a class="btn btn-outline-light btn-lg px-4 fw-bold how_works">
+              How it Works
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start end  -->
+
+
+    <!-- Wordganize Results Responds  -->
+    <div class="px-4 my-4 p-2" id="word_res">
+      <div class="responds_result p-2" id="wordganize-results">
+        <!-- <div class="wogo">
+          <a href="#"><img src="images/wogo-dark.png" alt="wordganize" srcset="" class="w-100 img-fluid pb-3 logo_img"
+              /></a>
+          <hr class="text-info">
+        </div> -->
+
+        <div>
+          <h3 class="text_wordganize m-2">Start <span class="web_name_class"></span></h3>
+          <!-- <hr class="text-info"> -->
+        </div>
+
+        <div id="process_form">
+          <form action="" method="POST">
+            <div class="mb-3">
+              <textarea name="word" id="wordInput" cols="100%" rows="5"
+                class="form-control input_class">Type in your word...</textarea>
+            </div>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-start">
+              <button type="button" id="process_word"
+                class=" bg_wordganize btn btn-info btn-lg px-4 me-sm-3 fw-bold text-black">
+                <span class="">Submit </span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="row" id="result_list">
+          <div class="col-md-9">
+            <div id="result_list_here">
+              <!-- <small class="d-block text-end mt-3">
+                <a href="#">View Summary</a>
+              </small> -->
+  
+            </div>
+            <button type="button" id="start_again" class="mt-2 btn btn-info btn-sm px-4 me-sm-3 fw-bold text-black">
+              <span>Start Again</span>
+            </button>
+          </div>
+
+          <div class="col-md-3 content_info">
+            content Info
+          </div>
+        </div>
+
+        <!-- <div class="spinner-border text-info mt-3" id="process_loader" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div> -->
+      </div>
+    </div>
+    <!-- Wordganize Results Responds  END -->
+
+
+    <!-- How it Works  -->
+    <div class="px-4 my-4 p-2" id="how_it_works">
+      <div class="my-3 p-2 bg-body rounded shadow-sm responds_result" id="wordganize-results">
+        <div class="row">
+          <div class="col-md-9">
+            <!-- <div class="wogo">
+          <a href=""><img src="images/wogo-dark.png" alt="wordganize" srcset="" class="w-100 img-fluid pb-3"
+              id="logo_img" /></a>
+          <hr class="text-info">
+        </div> -->
+            <div>
+              <h3 class="text-center fw-bold text_wordganize">How it Works</h3>
+              <hr class="text-info">
+            </div>
+            <div>
+              <div class="bd-example-snippet bd-code-snippet">
+                <div class="bd-example">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h4 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h4>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is hidden by default, until the
+                          collapse plugin adds the appropriate classes that we use to style each element. These classes
+                          control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                          modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                          that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h4 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h4>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                          collapse plugin adds the appropriate classes that we use to style each element. These classes
+                          control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                          modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                          that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h4 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h4>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                          collapse plugin adds the appropriate classes that we use to style each element. These classes
+                          control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                          modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                          that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-3">
+            side content
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ABOUT US  -->
+    <div class="px-4 my-4 p-2" id="about_page">
+      <div class="my-3 p-2 bg-body rounded shadow-sm responds_result" id="wordganize-results">
+        <!-- <div class="wogo">
+          <a href=""><img src="images/wogo-dark.png" alt="wordganize" srcset="" class="w-100 img-fluid pb-3"
+              id="logo_img" /></a>
+          <hr class="text-info">
+        </div> -->
+        <div>
+          <h3 class="text-center fw-bold text_wordganize">About <span class="web_name_class"></span></h3>
+          <hr class="text-info">
+        </div>
+        <div class="text-sm">
+
+          <p class="">
+            Introducing Wordganize, the ultimate solution for organizing and
+            understanding words. With our cutting-edge technology and user-friendly
+            interface, you can quickly and easily find the meaning of words,
+            generate synonyms and antonyms, and even discover new and related words.
+            Our platform uses natural language processing, machine learning, and
+            artificial intelligence to provide you with the most accurate and
+            up-to-date information on words. Whether you're a student, writer, or
+            just someone who loves words, Wordganize is the perfect tool for you.
+            Start exploring the world of words today with Wordganize!
+          </p>
+
+          <p class="">
+            Wordganize is a cutting-edge word organization platform that uses NLP,
+            ML and AI to provide accurate word meanings, synonyms, antonyms, and
+            related words. Perfect for students, writers and word enthusiasts. Start
+            exploring the world of words now.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT US END  -->
+  </main>
+
+
+
+  <!-- Word Results List -->
+  <div class="px-4 my-4 container" id="word_result_list">
+    <div>
+      <h5 class="text-black fw-bold">Recent <span class="web_name_class"></span></h5>
+      <hr class="text-info">
+    </div>
+    <div class="row" data-masonry="{&quot;percentPosition&quot;: true}" id="word_result_listing">
+    </div>
+  </div>
+  <!-- Word Results List End  -->
+
+
+  <!-- footer divider  -->
+  <div class="b-example-divider"></div>
+  <!-- footer divider end  -->
+
+
+
+  <!-- FOOTER START  -->
+  <footer class="py-3 my-4" id="footer">
+    <div class="row text-center">
+
+      <div class="col-md-4">
+        <a href="#!"><img src="images/wogo-dark.png" alt="wordganize" srcset="" width="150"
+            class="img-fluid logo_img" /></a>
+      </div>
+
+      <div class="col-md-4">
+        <span class="mb-3 mb-md-0 text-muted"> © 2023 <span class="web_name_class"></span>, Inc</span>
+      </div>
+
+      <div class="col-md-4">
+        <span><a class="text_wordganize m-2" href="#"><i class="bi bi-twitter"></i></a></span>
+        <span><a class="text_wordganize m-2" href="#"><i class="bi bi-instagram"></i></a></span>
+        <span><a class="text_wordganize m-2" href="#"><i class="bi bi-facebook"></i></a></span>
+      </div>
+
+    </div>
+  </footer>
+  <!-- FOOTER END  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+  <!-- <script src="assets/dist/js/bootstrap.bundle.min.js"></script> -->
+
+  <script type="text/javascript" src="assets/js/function.js"></script>
+</body>
+
+</html>

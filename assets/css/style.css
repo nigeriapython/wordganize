@@ -1,0 +1,192 @@
+body {
+    /* padding-bottom: 20px; */
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+
+
+
+/* Wordganize Custom Style  */
+
+.wogo {
+    margin: auto;
+    width: 30%;
+    text-align: center;
+}
+
+.wogo-app {
+    margin: auto;
+    width: 30%;
+    text-align: left;
+}
+
+/* wordganize result responds */
+.responds_result {
+    width: 70%;
+    margin: 4rem auto;
+}
+
+.input_class {
+    border: 3px solid #0dbbf0;
+    font-size: small;
+}
+
+.input_val_class {
+    border: 2px solid #f00d0d;
+    font-size: small;
+}
+
+.text_results{
+    font-size: smaller;
+}
+.text_wordganize {
+    color: #0dbbf0;
+}
+
+.bg_wordganize {
+    background-color: #0dbbf0;
+    border: 0;
+}
+
+.smlogo_view {
+    display: none;
+}
+
+.lglogo_view {
+    display: block;
+}
+
+#word_res {
+    width: 100%;
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+    .wogo {
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .content_info{
+        display: none;
+    }
+
+    .wogo-app {
+        margin: auto;
+        width: 80%;
+        text-align: left;
+    }
+
+    .responds_result {
+        width: 100%;
+        margin: 4rem auto;
+    }
+
+    .smlogo_view {
+        display: block;
+    }
+
+    .lglogo_view {
+        display: none;
+
+    }
+
+    #word_res {
+        width: 100%;
+    }
+
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    .wogo {
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .content_info{
+        display: none;
+    }
+
+    .wogo-app {
+        margin: auto;
+        width: 80%;
+        text-align: left;
+    }
+
+    .responds_result {
+        width: 100%;
+        margin: 4rem auto;
+    }
+
+    .smlogo_view {
+        display: none;
+    }
+
+    .lglogo_view {
+        display: block;
+
+    }
+
+    #word_res {
+        width: 100%;
+    }
+
+}
+
+
+
+/* DEMO TYPEWRITER BLINKER */
+
+#demo-wordganize span {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+
+#footer {
+    width: 80%;
+    margin: 4rem auto;
+}
